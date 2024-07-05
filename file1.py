@@ -1,6 +1,11 @@
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        result = 1
+        for i in range(1, n + 1):
+            result *= i
+        return result
 
-def sum_numbers(a, b):
-    return a + b
-
-result = sum_numbers(3, 5)
-print(f"The sum of 3 and 5 is: {result}")
+result = factorial(5)
+print(f"Factorial of 5 is: {result}")
